@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pruthvi | IT Diploma Student & Frontend Developer Portfolio. Explore modern, responsive, and interactive web projects, skills, and coding journey.">
+    <meta name="keywords" content="Pruthvi, Frontend Developer, IT Student, Portfolio, Web Design, HTML, CSS, JavaScript, MERN Stack, UI/UX">
+    <meta name="author" content="Pruthvi">
+    <title>Pruthvi | Frontend Developer & IT Student</title>
+    
+
+    
+        <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="logo-animation">
+                <span class="logo-p">P</span><span class="logo-dot">.</span>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCROLL PROGRESS BAR -->
+    <div id="scroll-progress"></div>
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="header">
+        <div class="container navbar">
+            <a href="#home" class="logo" aria-label="Pruthvi Portfolio Home">
+                <span>P</span><span class="dot">.</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#journey" class="nav-link">Journey</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle visual theme">
+                    <i data-lucide="moon" class="icon-dark"></i>
+                    <i data-lucide="sun" class="icon-light"></i>
+                </button>
+                <button id="menu-toggle" class="menu-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+                    <i data-lucide="menu" class="icon-menu"></i>
+                    <i data-lucide="x" class="icon-close"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        
+        <!-- HERO SECTION -->
+        <section id="home" class="hero-section">
+            <div class="hero-bg-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+            </div>
+            <div class="container hero-container">
+                <div class="hero-content reveal-fade-up">
+                    <span class="badge hero-badge">Available for Projects</span>
+                    <h2 class="hero-greeting">Hello, I am</h2>
+                    <h1 class="hero-name">PRUTHVI</h1>
+                    <div class="typing-wrapper">
+                        <span class="typing-prefix">I am a&nbsp;</span>
+                        <span id="typing-text"></span><span class="typing-cursor">|</span>
+                    </div>
+                    <p class="hero-desc">
+                        A passionate IT Diploma Student and Frontend Developer crafting immersive, responsive, and performance-optimized user interfaces. Dedicated to mastering modern web tech and transitioning to full stack development.
+                    </p>
+                    <div class="hero-ctas">
+                        <a href="#skills" class="btn btn-primary">
+                            <span>Skills</span>
+                            <i data-lucide="arrow-up-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Contact Me</span>
+                        </a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://github.com/Pruthviraj-Bhosale24/" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/pruthviraj-bhosale-9588a4415/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                           <a href="https://www.instagram.com/pruthviraj_bhosale_24/?hl=en"  rel="noopener noreferrer" class="social-link" aria-label="Instagram Profile">
+                                <i class="fa-brands fa-instagram"></i>
+                        <a href="mailto:bprutvhraj248@gmail.com" class="social-link" aria-label="Send Email">
+                            <i data-lucide="mail"></i>
+                        </a>
+                    
+                    </div>
+                </div>
+                
+                <div class="hero-media reveal-scale-in">
+                    <div class="profile-card-wrapper">
+                        <div class="profile-card-glow"></div>
+                        <div class="profile-card">
+                            <img src="/images/profile.jpeg" alt="Pruthvi Portrait" class="profile-img" loading="eager">
+                            <div class="profile-overlay-info">
+                                <i data-lucide="code"></i>
+                                <span>Frontend Dev</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#about" class="scroll-indicator" aria-label="Scroll down to About section">
+                <span class="mouse-icon">
+                    <span class="wheel"></span>
+                </span>
+                <span class="scroll-text">Scroll Down</span>
+            </a>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <div class="section-header reveal-fade-up">
+                    <span class="subtitle">Get To Know Me</span>
+                    <h2 class="title">About Myself</h2>
+                    <div class="header-line"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-info-card reveal-fade-up">
+                        <h3 class="about-title">My Journey & Goals</h3>
+                        <p class="about-text">
+                            Currently pursuing my <strong>IT Diploma</strong>, I discovered my affinity for building things on the web early in my academic path. What started as simple HTML layouts soon turned into a deep passion for clean design systems, responsive interfaces, and interactive software architectures.
+                        </p>
+                        <p class="about-text">
+                            As a developer, I believe in balancing raw technology with artistic UI design. My goal is to write accessible, clean, and modular code, translating visual systems into high-performance web products.
+                        </p>
+                        <p class="about-text">
+                            I am constantly learning new paradigms. Currently, I am expanding my skills beyond the browser client, delving deep into backend web services and API architectures using the MERN stack.
+                        </p>
+                        <div class="about-meta-grid">
+                            <div class="meta-item">
+                                <i class="fa-duotone fa-solid fa-book-open"></i>
+                                <div>
+                                    <h4>Education</h4>
+                                    <p>Information Technology Diploma</p>
+                                </div>
+                            </div>
+                            <div class="meta-item">
+                                <i data-lucide="map-pin"></i>
+                                <div>
+                                    <h4>Based In</h4>
+                                    <p>Pune, Maharashtra, India</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-stats-card reveal-fade-up" style="transition-delay: 0.1s;">
+                        <h3 class="about-title">Interests & Core Pillars</h3>
+                        <div class="stats-grid">
+                            <div class="stat-box">
+                                <div class="stat-icon-wrapper">
+                                    <i class="fa-solid fa-palette"></i>
+                                </div>
+                                <h4>UI/UX Styling</h4>
+                                <p>Crafting polished interfaces with detailed transitions and clean typography.</p>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-icon-wrapper">
+                                    <i data-lucide="smartphone"></i>
+                                </div>
+                                <h4>Responsive Dev</h4>
+                                <p>Ensuring pixel-perfect fluid layouts across all viewport sizes.</p>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-icon-wrapper">
+                                    <i class="fa-solid fa-bolt"></i>
+                                </div>
+                                <h4>Performance</h4>
+                                <p>Optimizing image assets, script execution, and semantic hierarchy.</p>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-icon-wrapper">
+                                    <i class="fa-solid fa-database"></i>
+                                </div>
+                                <h4>Full Stack Aspirant</h4>
+                                <p>Progressively learning Node.js, Express, and MongoDB databases.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="skills-section section-padding">
+            <div class="container">
+                <div class="section-header reveal-fade-up">
+                    <span class="subtitle">My Stack & Expertise</span>
+                    <h2 class="title">Skills Bento Grid</h2>
+                    <div class="header-line"></div>
+                </div>
+                
+                <div class="bento-grid">
+                    <!-- HTML & CSS Card -->
+                    <div class="bento-card bento-w2 reveal-fade-up">
+                        <div class="bento-bg-gradient bg-orange"></div>
+                        <div class="bento-card-content">
+                            <div class="bento-icons">
+                                <i data-lucide="code-2" class="skill-main-icon"></i>
+                            </div>
+                            <h3 class="bento-title">Core Web Standards</h3>
+                            <p class="bento-desc">Expertise in structural semantic HTML5 and clean layouts using Vanilla CSS, Flexbox, and Grid.</p>
+                            <div class="skills-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">Flexbox</span>
+                                <span class="tag">Grid</span>
+                                <span class="tag">Variables</span>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-info">
+                                    <span>Proficiency</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 95%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- JavaScript Card -->
+                    <div class="bento-card bento-h2 reveal-fade-up" style="transition-delay: 0.1s;">
+                        <div class="bento-bg-gradient bg-yellow"></div>
+                        <div class="bento-card-content">
+                            <div class="bento-icons">
+                                <i data-lucide="file-json-2" class="skill-main-icon"></i>
+                            </div>
+                            <h3 class="bento-title">Modern JavaScript</h3>
+                            <p class="bento-desc">ES6+ syntax, asynchronous programming, DOM manipulations, fetch API integration, browser storages, and state handling.</p>
+                            <div class="skills-tags">
+                                <span class="tag">ES6+</span>
+                                <span class="tag">Async/Await</span>
+                                <span class="tag">APIs</span>
+                                <span class="tag">DOM API</span>
+                                <span class="tag">JSON</span>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-info">
+                                    <span>Proficiency</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bento-card reveal-fade-up" style="transition-delay: 0.4s;">
+    <div class="bento-bg-gradient bg-green"></div>
+
+    <div class="bento-card-content">
+        <div class="bento-icons">
+            <i data-lucide="file-code-2" class="skill-main-icon"></i>
+        </div>
+
+        <h3 class="bento-title">Python Programming</h3>
+
+        <p class="bento-desc">
+            Developing efficient Python applications, automating tasks, and solving real-world problems with clean and readable code.
+        </p>
+
+        <div class="skills-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Automation</span>
+            <span class="tag">OOP</span>
+        </div>
+    </div>
+</div>
+    
+
+                    <div class="bento-card reveal-fade-up" style="transition-delay: 0.3s;">
+                    <div class="bento-bg-gradient bg-orange"></div>
+                        <div class="bento-card-content">
+                        <div class="bento-icons">
+                            <i data-lucide="coffee" class="skill-main-icon"></i>
+                        </div>
+                        <h3 class="bento-title">Java Programming</h3>
+                        <p class="bento-desc">Building object-oriented applications, understanding core Java concepts, and solving programming problems efficiently.</p>
+                        <div class="skills-tags">
+                        <span class="tag">Core Java</span>
+                        <span class="tag">OOP</span>
+                        <span class="tag">Collections</span>
+                        </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Responsive Design Card -->
+                    <div class="bento-card reveal-fade-up" style="transition-delay: 0.1s;">
+                        <div class="bento-bg-gradient bg-cyan"></div>
+                        <div class="bento-card-content">
+                            <div class="bento-icons">
+                                <i data-lucide="monitor-smartphone" class="skill-main-icon"></i>
+                            </div>
+                            <h3 class="bento-title">Responsive Layouts</h3>
+                            <p class="bento-desc">Creating fluid interfaces optimized for smartphones, tablets, laptops, and ultra-wide screens.</p>
+                            <div class="skills-tags">
+                                <span class="tag">Media Queries</span>
+                                <span class="tag">Mobile-First</span>
+                                <span class="tag">Rem/Em</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- C Programming Card -->
+                    <div class="bento-card reveal-fade-up" style="transition-delay: 0.2s;">
+                        <div class="bento-bg-gradient bg-blue"></div>
+                        <div class="bento-card-content">
+                            <div class="bento-icons">
+                                <i data-lucide="terminal" class="skill-main-icon"></i>
+                            </div>
+                            <h3 class="bento-title">C & CPP Programming</h3>
+                            <p class="bento-desc">Solid foundation in computer science principles, control flow, functions, structures, and pointer concepts.</p>
+                            <div class="skills-tags">
+                                <span class="tag">Procedural Programming</span>
+                                <span class="tag">Data Structures</span>
+                            </div>
+                        </div>
+                    </div>
+
+                                
+                    
+                    <!-- MERN Stack learning Card -->
+                    <div class="bento-card bento-w2 reveal-fade-up" style="transition-delay: 0.3s;">
+                        <div class="bento-bg-gradient bg-green"></div>
+                        <div class="bento-card-content">
+                            <div class="learning-badge"><span class="pulse-dot"></span>Currently Learning</div>
+                            <div class="bento-icons">
+                                <i data-lucide="layers" class="skill-main-icon"></i>
+                            </div>
+                            <h3 class="bento-title">MERN Full Stack</h3>
+                            <p class="bento-desc">Bridging UI experiences with cloud databases and API backend architectures. Building mock projects using modern database modeling.</p>
+                            <div class="skills-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">Express.js</span>
+                                <span class="tag">MongoDB</span>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-info">
+                                    <span>Learning Progress</span>
+                                    <span>40%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 40%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>    
+                    
+                  
+
+        <!-- JOURNEY TIMELINE -->
+        <section id="journey" class="journey-section section-padding">
+            <div class="container">
+                <div class="section-header reveal-fade-up">
+                    <span class="subtitle">Milestones & History</span>
+                    <h2 class="title">My Journey</h2>
+                    <div class="header-line"></div>
+                </div>
+                
+                <div class="timeline-container">
+                    <div class="timeline-line">
+                        <div class="timeline-progress"></div>
+                    </div>
+                    
+                    <div class="timeline-items">
+                        <!-- Milestone 1 -->
+                        <div class="timeline-item reveal-fade-up">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-card">
+                                <span class="timeline-date">June 2024</span>
+                                <h3 class="timeline-title">Started IT Diploma</h3>
+                                <p class="timeline-desc">Admitted into the Information Technology program. Learned core computer systems, algorithms, and logic creation using C.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Milestone 2 -->
+                        <div class="timeline-item reveal-fade-up">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-card">
+                                <span class="timeline-date">October 2024</span>
+                                <h3 class="timeline-title">Learned HTML & CSS</h3>
+                                <p class="timeline-desc">Discovered browser design. Built custom static websites, mastering positioning styles, responsive layouts, and grid structures.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Milestone 3 -->
+                        <div class="timeline-item reveal-fade-up">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-card">
+                                <span class="timeline-date">February 2025</span>
+                                <h3 class="timeline-title">Learned JavaScript</h3>
+                                <p class="timeline-desc">Added rich behaviors to projects. Explored async flows, local state, DOM query engines, and basic game logic code loops.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Milestone 4 -->
+                        <div class="timeline-item reveal-fade-up">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-card">
+                                <span class="timeline-date">December 2025</span>
+                                <h3 class="timeline-title">Learning MERN Stack</h3>
+                                <p class="timeline-desc">Moving into full-stack web applications. Structuring dynamic APIs with Express, databases in MongoDB, and components in React.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Milestone 5 -->
+                        <div class="timeline-item reveal-fade-up">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-card">
+                                <span class="timeline-date">Present (2026)</span>
+                                <h3 class="timeline-title">Building Real Projects</h3>
+                                <p class="timeline-desc">Creating premium interfaces and production-optimized code mockups. Collaborating via Git/GitHub on frontend templates.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <div class="section-header reveal-fade-up">
+                    <span class="subtitle">Get In Touch</span>
+                    <h2 class="title">Contact Me</h2>
+                    <div class="header-line"></div>
+                </div>
+                
+                <div class="contact-grid">
+                    <!-- Form Container -->
+                    <div class="contact-form-wrapper reveal-fade-up">
+                        <div class="form-glow"></div>
+                        <form id="contact-form" class="contact-form" autocomplete="on">
+                            <div class="form-header">
+                                <h3>Send a Message</h3>
+                                <p>Feel free to reach out for project discussions, college collaborations, or general questions.</p>
+                            </div>
+                            
+                            <div class="input-group">
+                                <input type="text" id="form-name" required placeholder=" " autocomplete="name">
+                                <label for="form-name">Full Name</label>
+                                <span class="input-focus-line"></span>
+                                <span class="error-msg" id="name-error">Please enter your name.</span>
+                            </div>
+                            
+                            <div class="input-group">
+                                <input type="email" id="form-email" required placeholder=" " autocomplete="email">
+                                <label for="form-email">Email Address</label>
+                                <span class="input-focus-line"></span>
+                                <span class="error-msg" id="email-error">Please enter a valid email.</span>
+                            </div>
+                            
+                            <div class="input-group">
+                                <textarea id="form-message" required placeholder=" " rows="4"></textarea>
+                                <label for="form-message">Your Message</label>
+                                <span class="input-focus-line"></span>
+                                <span class="error-msg" id="message-error">Please enter a message.</span>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary submit-btn">
+                                <span>Send Message</span>
+                                <i data-lucide="send"></i>
+                            </button>
+                            
+                            <div class="form-feedback-overlay" id="form-feedback">
+                                <div class="feedback-content">
+                                    <div class="feedback-icon-wrapper">
+                                        <i data-lucide="check-circle" class="success-icon"></i>
+                                    </div>
+                                    <h3>Thank You!</h3>
+                                    <p>Your message was sent successfully. I'll get back to you shortly.</p>
+                                    <button type="button" class="btn btn-secondary close-feedback-btn" id="close-feedback">Close</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <!-- Contact Cards / Info -->
+                    <div class="contact-info reveal-fade-up" style="transition-delay: 0.1s;">
+                        <h3 class="contact-info-title">Let's Connect</h3>
+                        <p class="contact-info-desc">Interested in working together or just want to chat about development? Feel free to drop a message or connect through other networks.</p>
+                        
+                        <div class="info-cards-list">
+                            <a href="mailto:bpruthviraj248@gmail.com" class="info-card">
+                                <div class="info-card-icon">
+                                    <i data-lucide="mail"></i>
+                                </div>
+                                <div class="info-card-text">
+                                    <span>Mail Me</span>
+                                    <p>bpruthviraj248@gmail.com</p>
+                                </div>
+                            </a>
+                            
+                            <a href="https://www.linkedin.com/in/pruthviraj-bhosale-9588a4415/" target="_blank" rel="noopener noreferrer" class="info-card">
+                                <div class="info-card-icon">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </div>
+                                <div class="info-card-text">
+                                    <span>LinkedIn</span>
+                                    <p>pruthviraj-bhosale</p>
+                                </div>
+                            </a>
+                            
+                            <a href="https://github.com/Pruthviraj-Bhosale24/" target="_blank" rel="noopener noreferrer" class="info-card">
+                                <div class="info-card-icon">
+                                    <i class="fa-brands fa-github"></i>
+                                </div>
+                                <div class="info-card-text">
+                                    <span>GitHub</span>
+                                    <p>Pruthviraj-Bhosale24</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#home" class="footer-logo">
+                    <span>P</span><span class="dot">.</span>
+                </a>
+                <p>IT Diploma Student & Frontend Developer</p>
+            </div>
+            
+            <div class="footer-links">
+                <ul class="footer-nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#journey">Journey</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Pruthvi. All rights reserved. Designed with passion.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button id="back-to-top" class="back-to-top-btn" aria-label="Scroll back to top">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <!-- Custom Script -->
+    <script src="js/script.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
